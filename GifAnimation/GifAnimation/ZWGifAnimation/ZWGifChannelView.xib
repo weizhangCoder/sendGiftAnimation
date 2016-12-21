@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="vpV-y1-Y3b" customClass="ZWGifChannelView" customModule="GifAnimation" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="P0l-pI-eqf" userLabel="背景">
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.5" colorSpace="calibratedRGB"/>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" alpha="0.0" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="X20" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2n5-BC-j0s" customClass="ZWGifDigitLabel" customModule="GifAnimation" customModuleProvider="target">
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="Shk-vf-cud"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                    <color key="textColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="8MB-S9-CF3" userLabel="头像">
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="8MB-S9-CF3" secondAttribute="height" multiplier="1:1" id="bZx-hf-yrX"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="coderwhy" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gW0-tV-58a">
+                    <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="送出礼物【飞机】" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pzY-xp-aBt">
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <color key="textColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="3Zk-er-rsP" userLabel="礼物">
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="3Zk-er-rsP" secondAttribute="height" multiplier="1:1" id="73T-Ly-Szx"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="2n5-BC-j0s" firstAttribute="top" secondItem="vpV-y1-Y3b" secondAttribute="top" id="04z-uT-cdz"/>
+                <constraint firstItem="2n5-BC-j0s" firstAttribute="leading" secondItem="P0l-pI-eqf" secondAttribute="trailing" constant="5" id="FWR-4B-lUH"/>
+                <constraint firstItem="2n5-BC-j0s" firstAttribute="leading" secondItem="3Zk-er-rsP" secondAttribute="trailing" constant="5" id="ICn-gW-T4G"/>
+                <constraint firstItem="P0l-pI-eqf" firstAttribute="leading" secondItem="vpV-y1-Y3b" secondAttribute="leading" id="IY7-aL-8cv"/>
+                <constraint firstAttribute="bottom" secondItem="pzY-xp-aBt" secondAttribute="bottom" constant="2" id="L9u-YE-n6w"/>
+                <constraint firstItem="3Zk-er-rsP" firstAttribute="top" secondItem="vpV-y1-Y3b" secondAttribute="top" constant="-5" id="LxB-W5-dJB"/>
+                <constraint firstItem="3Zk-er-rsP" firstAttribute="leading" secondItem="pzY-xp-aBt" secondAttribute="trailing" id="MDH-vi-nif"/>
+                <constraint firstAttribute="bottom" secondItem="P0l-pI-eqf" secondAttribute="bottom" id="MgO-Cn-FLS"/>
+                <constraint firstAttribute="bottom" secondItem="8MB-S9-CF3" secondAttribute="bottom" id="P4x-tm-VTz"/>
+                <constraint firstItem="8MB-S9-CF3" firstAttribute="leading" secondItem="vpV-y1-Y3b" secondAttribute="leading" id="QKR-dV-1cr"/>
+                <constraint firstItem="pzY-xp-aBt" firstAttribute="leading" secondItem="8MB-S9-CF3" secondAttribute="trailing" constant="10" id="RfZ-Uf-Ccq"/>
+                <constraint firstItem="P0l-pI-eqf" firstAttribute="top" secondItem="vpV-y1-Y3b" secondAttribute="top" id="azH-JU-GVh"/>
+                <constraint firstItem="8MB-S9-CF3" firstAttribute="top" secondItem="vpV-y1-Y3b" secondAttribute="top" id="nHV-X3-HHs"/>
+                <constraint firstAttribute="bottom" secondItem="3Zk-er-rsP" secondAttribute="bottom" constant="-5" id="wj1-VL-Pfg"/>
+                <constraint firstItem="gW0-tV-58a" firstAttribute="top" secondItem="vpV-y1-Y3b" secondAttribute="top" constant="5" id="yYy-Ya-L2E"/>
+                <constraint firstItem="gW0-tV-58a" firstAttribute="leading" secondItem="8MB-S9-CF3" secondAttribute="trailing" constant="10" id="zkF-4a-Eld"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="bgView" destination="P0l-pI-eqf" id="Sps-mU-fAH"/>
+                <outlet property="digitLabel" destination="2n5-BC-j0s" id="leS-KC-lKx"/>
+                <outlet property="giftDescLabel" destination="pzY-xp-aBt" id="3cM-sP-EQD"/>
+                <outlet property="giftImageView" destination="3Zk-er-rsP" id="luB-Lc-WKX"/>
+                <outlet property="iconImageView" destination="8MB-S9-CF3" id="sVl-ld-Spg"/>
+                <outlet property="senderLabel" destination="gW0-tV-58a" id="gLU-YG-UKK"/>
+            </connections>
+            <point key="canvasLocation" x="45" y="136"/>
+        </view>
+    </objects>
+</document>
