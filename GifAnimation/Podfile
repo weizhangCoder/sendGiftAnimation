@@ -1,0 +1,10 @@
+
+ platform :ios, '9.0'
+
+target 'GifAnimation' do
+
+  use_frameworks!
+
+  # Pods for GifAnimation
+
+end
